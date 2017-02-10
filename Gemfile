@@ -1,13 +1,20 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
+# git_source(:github) do |repo_name|
+#  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+#  "https://github.com/#{repo_name}.git"
+# end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+gem 'rails', '>= 5.0.0.1'
+# use devise
+gem 'devise'
+# use twitter-bootstrap-rails
+gem 'twitter-bootstrap-rails'
+# use devise-bootstrap-views
+gem 'devise-bootstrap-views'
+# use bootstrap-sass
+gem 'bootstrap-sass', '>= 3.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -29,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '>= 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
